@@ -41,12 +41,12 @@ if you want to do scss/css changes, you need to run npm ```npm run build-css``` 
    
    [two]: screenshots/002.png "Two"
 
-    ![alt text][three]
+   ![alt text][three]
    
    [three]: screenshots/003.png "Three"
 
-    ![alt text][four]
-   
+   ![alt text][four]
+
    [four]: screenshots/004.png "Four"
 
   
