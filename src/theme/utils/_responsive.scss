@@ -1,0 +1,66 @@
+$screen-xxs: 320px !default;
+$screen-xxs-min: $screen-xxs !default;
+$screen-phone-xs: $screen-xxs-min !default; // Extra small screen / phone
+
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+$screen-phone: $screen-xs-min !default; // Small screen / tablet
+
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+$screen-tablet: $screen-sm-min !default; // Medium screen / desktop
+
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+$screen-desktop: $screen-md-min !default; // Large screen / wide desktop
+
+$screen-lg: 1600px !default;
+$screen-lg-min: $screen-lg !default;
+$screen-lg-desktop: $screen-lg-min !default; // So media queries don't overlap when required, provide a maximum
+
+$screen-xlg: 2500px !default;
+$screen-xlg-min: $screen-xlg !default;
+$screen-xlg-desktop: $screen-xlg-min !default; // So media queries don't overlap when required, provide a maximum
+
+$screen-xxs-max: ($screen-xxs-min - 1) !default;
+$screen-xs-max: ($screen-xs-min - 1) !default;
+$screen-sm-max: ($screen-sm-min - 1) !default;
+$screen-md-max: ($screen-md-min - 1) !default;
+$screen-lg-max: ($screen-lg-min - 1) !default;
+$screen-xlg-max: ($screen-xlg-min - 1) !default;
+
+@mixin bp-xxs-min {
+  @media only screen and (max-width: $screen-xxs) {
+    @content;
+  }
+}
+
+@mixin bp-xs-max {
+  @media only screen and (max-width: $screen-xs-max) {
+    @content;
+  }
+}
+
+@mixin bp-sm-max {
+  @media only screen and (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
+@mixin bp-md-max {
+  @media only screen and (max-width: $screen-md-max) {
+    @content;
+  }
+}
+
+@mixin bp-lg-max {
+  @media only screen and (max-width: $screen-lg-max) {
+    @content;
+  }
+}
+
+@mixin bp-xlg-max {
+  @media only screen and (max-width: $screen-xlg-max) {
+    @content;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../theme/variables";
+@import "../../theme/utils/responsive";
+@import "../../theme/utils/utils";
+
+.favourite{
+  .card-holder{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  h2{
+    color: #ccc;
+    padding: 0;
+    font-weight: 300;
+    @include bp-xs-max{
+      padding: 0;
+      font-size: 1.6rem;
+    }
+  }
+
+}
