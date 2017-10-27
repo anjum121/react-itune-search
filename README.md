@@ -3,6 +3,10 @@
 
 This is demo application, using iTunes free search API. Technologies used HTML5, react.js,  redux, CSS3
 
+## Demo 
+
+You can check out live demo here https://anjum121.github.io/react-itune-search/ 
+
 ## Prerequisite 
 
 You should have latest node installed in your computer.
