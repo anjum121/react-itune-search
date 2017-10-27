@@ -12,7 +12,7 @@ You can check out live demo here https://anjum121.github.io/react-itune-search/
 You should have latest node installed in your computer.
 
 ``` javascript 
- get clone https://github.com/anjum121/react-itune-search.git
+ git clone https://github.com/anjum121/react-itune-search.git
 ````
 
 
