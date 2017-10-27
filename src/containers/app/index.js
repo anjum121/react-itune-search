@@ -7,13 +7,15 @@ const App = () => (
     <div>
         <div id="mySidenav" className="sidenav">
             <div  className="closebtn" onClick={closeNav}>&times;</div>
-            <Link to="/" onClick={closeNav}>Home</Link>
-            <Link to="/favourite" onClick={closeNav}>Favourite</Link>
+            <Link to="./" onClick={closeNav}>Home</Link>
+            <Link to="./favourite" onClick={closeNav}>Favourite</Link>
         </div>
 
         <main id="main">
             <span className='pushMenu' onClick={openNav}>&#9776;</span>
-            <Route exact path="/" component={Home}/>
+            {/*<Route exact  path="/react-itune-search/" component={Home}/>*/}
+            {/*<Route exact path="/react-itune-search/favourite" component={Favourite}/>*/}
+            <Route exact  path="/" component={Home}/>
             <Route exact path="/favourite" component={Favourite}/>
         </main>
     </div>

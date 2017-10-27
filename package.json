@@ -22,9 +22,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "1.0.0",
     "node-sass-chokidar": "0.0.3"
   },
   "repository": {
@@ -37,5 +40,5 @@
   "bugs": {
     "url": "https://github.com/anjum121/react-itune-search/issues"
   },
-  "homepage": "https://github.com/anjum121/react-itune-search#readme"
+  "homepage": "http://anjum121.github.io/react-itune-search"
 }
